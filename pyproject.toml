@@ -17,7 +17,10 @@ license = {text = "MIT"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
+
+[project.scripts]
+pp = fr.cli:prdict
 
 [tool.pdm.dev-dependencies]
 note = [
