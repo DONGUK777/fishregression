@@ -19,7 +19,8 @@ license = {text = "MIT"}
 [tool.pdm]
 distribution = true
 
-#[project.scripts]
+[project.scripts]
+fish-predict="fr.cli:pred"
 #pp = "fr.cli:predict"
 
 [tool.pdm.dev-dependencies]
