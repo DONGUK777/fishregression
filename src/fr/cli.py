@@ -6,10 +6,10 @@ import requests as reqs
 def pred():
     l = input("물고기의 길이 입력 : ")
 
-    resp = reqs.get(f"http://localhost:8001/fish?length={l}").text
+    resp = reqs.get(f"http://3.36.94.227:8001/fish?length={l}").text
     w=eval(resp)["prediction"]
     
-    resp = reqs.get(f"http://localhost:8002/fish_std?length={l}&weight={w}&nneighbor=5").text
+    resp = reqs.get(f"http://3.36.94.227:8002/fish_std?length={l}&weight={w}&nneighbor=5").text
     pred=eval(resp)["prediction"]
 
     print(f"\n입력한 물고기의 길이는 {l}입니다.")
